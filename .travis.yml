@@ -130,5 +130,5 @@ notifications:
   email: false
 before_script:
   -composer install
-  -app/Console/cake test app AllTests
+  
 script: phpunit --configuration phpunit.xml --coverage-text

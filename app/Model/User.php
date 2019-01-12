@@ -10,6 +10,7 @@ class User extends AppModel {
 	        'fields' => $fields
 	    );
 
+
 	    return $this->find('all', $params);
 	}
 

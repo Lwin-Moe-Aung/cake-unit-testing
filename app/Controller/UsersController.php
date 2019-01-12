@@ -6,7 +6,16 @@ App::uses('AppController', 'Controller');
 class UsersController extends AppController {
 
 	public function index() {
-    	//to retrieve all users, need just one line
+		
+        if (!empty($short)) {
+            $result = $this->User->find('all', array('id', 'firstname'));
+        } else {
+            $result = $this->User->find('all');
+        }
+
+        if (isset($this->params['requested'])) {
+            return $result;
+        }
     	$this->set('users', $this->User->find('all'));
 	}
 
@@ -108,6 +117,13 @@ class UsersController extends AppController {
 	        }
 	    }
 	}
+
+	public function jsonResponse() {
+        $data = $this->User->find('first');
+        $data =  json_encode($data);
+        return $data;
+       	//$this->set("hello", $data);
+    }
 
 
 }

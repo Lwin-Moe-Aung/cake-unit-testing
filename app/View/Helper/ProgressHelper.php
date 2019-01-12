@@ -1,4 +1,3 @@
-
 <?php
 
 class ProgressHelper extends AppHelper {

@@ -2,7 +2,7 @@
 
 App::uses('Controller', 'Controller');
 App::uses('View', 'View');
-App::uses('ProgressHelper', 'Test/Case/View/Helper');
+App::uses('ProgressHelper', 'View/Helper');
 
 class ProgressHelperTest extends CakeTestCase {
     public function setUp() {

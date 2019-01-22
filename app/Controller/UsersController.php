@@ -124,6 +124,7 @@ class UsersController extends AppController {
         return $data;
        	//$this->set("hello", $data);
     }
+    
 
 
 }

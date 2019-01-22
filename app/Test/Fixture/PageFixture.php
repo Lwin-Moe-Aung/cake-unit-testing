@@ -1,9 +1,7 @@
 <?php
 
-class ArticleFixture extends CakeTestFixture {
+class PageFixture extends CakeTestFixture {
 
-      // Optional.
-      // Set this property to load fixtures to a different test datasource
       public $useDbConfig = 'test';
       public $fields = array(
           'id' => array('type' => 'integer', 'key' => 'primary'),
@@ -45,6 +43,43 @@ class ArticleFixture extends CakeTestFixture {
             'published' => '1',
             'created' => '2007-03-18 10:43:23',
             'updated' => '2007-03-18 10:45:31'
+          ),
+          array(
+            'id' => 4,
+            'title' => 'fourth Article',
+            'body' => 'fourth Article Body',
+            'published' => '1',
+            'created' => '2007-03-18 10:43:23',
+            'updated' => '2007-03-18 10:45:31'
           )
+
       );
+      //public $import = array('table' => 'pages', 'records' => true);
+      // public $records = array(
+      //     array(
+      //       'id' => 1,
+      //       'name' => 'soe',
+      //       'description' => 'aung',
+      //       'detail' => 'soeaung@gmail.com',
+      //       'created' => '2007-03-18 10:41:31',
+      //       'modified' => '2007-03-18 10:44:31'
+      //     ),
+      //     array(
+      //       'id' => 2,
+      //       'name' => 'aung',
+      //       'description' => 'aung',
+      //       'detail' => 'soeaung@gmail.com',
+      //       'created' => '2007-03-18 10:41:31',
+      //       'modified' => '2007-03-18 10:44:31'
+      //     ),
+      //     array(
+      //       'id' => 3,
+      //       'name' => 'ye',
+      //       'description' => 'aung',
+      //       'detail' => 'soeaung@gmail.com',
+      //       'created' => '2007-03-18 10:41:31',
+      //       'modified' => '2007-03-18 10:44:31'
+      //     )
+         
+      // );
  }
